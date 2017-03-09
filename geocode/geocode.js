@@ -9,7 +9,7 @@ var geocodeAddress = (address, callback) => {
     json: true
   }, (error, response, body) => {
     if (error) {
-      callback('Unable to connect to Google servers.');
+      callback('сервера Google на обеде');
     } else if (body.status === 'ZERO_RESULTS') {
       callback('Unable to find that address.');
     } else if (body.status === 'OK') {
